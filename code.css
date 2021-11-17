@@ -1,0 +1,162 @@
+/* CSS RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS VARIABLE */
+
+:root{
+
+    --navbarHeight:59px;
+}
+
+/* navigation bar */
+
+#navbar{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+
+    background-color: black;
+    width: 100%;
+    height: 80%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo img{
+    width: 74px;
+    height: 66px;
+    border-radius: 21px;
+    margin: 19px 15px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: 5px 5px;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 6px 6px;
+    border-radius: 20px;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* home */
+
+#home{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 293px;
+    padding: 23px 220px;
+    justify-content: center;
+}
+
+#home::before{
+
+    content: "";
+    position: absolute;
+
+    background: url(img.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 65%;
+    z-index: -1;
+    top:0px;
+    left: 0px;
+
+    opacity: 0.8;
+}
+
+/* service section */
+
+.service{
+
+    margin: 54px;
+    display: flex;
+}
+
+.service .box{
+    margin: 36px;
+    padding: 34px;
+    border: 2px solid plum;
+    border-radius: 25px;
+    background-color: rgb(183, 236, 238);
+}
+
+.service .box img{
+    width: 150px;
+    height: 123px;
+    display: block;
+    margin: auto;
+}
+
+
+/* utility classes */
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align:justify;
+    font-size: 1.4rem;
+}
+
+.h1_primary{
+    color: rgb(56, 55, 55);
+    font-size: 2.8rem;
+    padding: 2px;
+    font-family:cursive;
+    font-weight: bolder;
+}
+
+.h_secondary
+{
+    color: rgb(247, 247, 247);
+    font-size: 1.9rem;
+    padding: 2px;
+    font-family:cursive;
+    font-weight: bolder;
+}
+
+.btn{
+
+    font-size: 1.2rem;
+    font-family:sans-serif;
+    font-weight:bolder;
+    padding: 2px 18px;
+    border: 3px solid white;
+    background-color: violet;
+    border-radius: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}

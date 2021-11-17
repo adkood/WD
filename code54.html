@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulating DOM</title>
+</head>
+<body>
+    <div class="container" id="make">
+        <ul>
+            <li>home</li>
+            <li>contact us</li>
+            <li>services</li>
+            <li>more about us</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        this is another container
+    </div>
+
+    <script>
+
+        // get by id
+        // let a=document.getElementById("make");
+        // console.log(a);
+
+        //get by class name // it will give all the class name and you van select the anyone as u select in arrays
+        // let b=document.getElementsByClassName('container');
+        // console.log(b);
+
+        // css Selectors
+        
+        // let c=document.querySelector('.container');
+        // console.log('selector return',c);
+
+        let e=document.querySelector('#make>ul>li');
+        console.log('it returns',e)
+
+        // let d=document.querySelectorAll('.container');
+        // console.log(d);
+    </script>
+</body>
+</html>

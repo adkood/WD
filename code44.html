@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid and media query</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'foot foot foot foot';
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #footer {
+            grid-area: foot;
+        }
+
+        .bdr {
+            border: 2px solid;
+            background-color: aquamarine;
+            padding: 23px;
+        }
+
+        @media (min-width:700px) and (max-width:900px) {
+            body {
+                background-color: blueviolet;
+            }
+        }
+
+
+        @media (min-width:500px) and (max-width:700px) {
+            body {
+                background-color: rgb(43, 226, 49);
+            }
+
+            .container {
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'foot foot foot foot';
+            }
+
+            #aside{
+                display: none;
+            }
+        }
+
+        @media (max-width:500px) {
+            body {
+                background-color: rgb(226, 43, 165);
+            }
+
+            .container {
+
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'foot foot foot foot';
+            }
+            #aside{
+                display: none;
+            }
+
+            #footer{
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav id="navbar" class="bdr">
+            home contactus aboutus
+        </nav>
+        <section id="section" class="bdr">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, iure at. Modi inventore quae quas sit
+            maxime magni doloribus facilis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque deleniti animi facilis
+            dignissimos quam placeat praesentium aspernatur, a quaerat vero blanditiis reiciendis itaque saepe iure
+            perferendis amet officia minus debitis id! Saepe nihil eos eaque neque ipsum error omnis accusamus ullam ut,
+            fugiat ipsam. Hic nemo aliquam reiciendis esse!
+        </section>>
+        <aside id="aside" class="bdr">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At, nisi ipsa. Ipsa, molestiae.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam natus eum, ad eaque modi neque sed perferendis
+            laboriosam, ducimus impedit necessitatibus voluptatibus ullam maiores dolor cum nihil magni? Eum doloremque
+            perspiciatis natus ducimus accusamus expedita ipsam pariatur ex repudiandae minima iste, quod excepturi
+            adipisci fugit molestias veritatis architecto sit cumque?
+        </aside>
+        <footer id="footer" class="bdr">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, culpa fugiat saepe dolor ab beatae asperiores
+            eos inventore ipsum ratione harum .
+        </footer>
+    </div>
+
+</body>
+
+</html>

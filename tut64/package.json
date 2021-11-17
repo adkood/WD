@@ -1,0 +1,21 @@
+{
+  "name": "tut64",
+  "version": "1.0.0",
+  "description": "this is the best package",
+  "main": "tut64.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awsome"
+  ],
+  "author": "ashutosh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "slugify": "^1.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> arrow function</title>
+</head>
+<body>
+
+    <p>this is arrow tutorial</p>
+
+    <script>
+
+        // normal function
+        // function func()
+        // {
+        //     console.log('help');
+        // }
+        // func();
+
+        //using arrow function
+        // let a= () => console.log('help');
+        // a();
+
+        //set interval using arrow function
+        // setTimeout(() => {
+        //     console.log('help');
+        // }, 5000);
+
+
+        let odj={
+            str:"ole",
+            arr: ["harry","rohan","voldemort"],
+            greet(){
+                this.arr.forEach(element => {
+                    //lexographic this
+                    console.log(this.str+" kookdoo koo " + element);
+                });        
+            }
+        }
+        odj.greet();
+
+        // let a=(a,b)=> a+b;  
+
+    </script>
+
+</body>
+</html>

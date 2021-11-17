@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> events and listening events</title>
+
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, aperiam nemo. Officiis quibusdam tempora mollitia, iste dignissimos libero aliquam quo quam perferendis. Ipsa, aspernatur quas, fugiat quae blanditiis praesentium beatae voluptatum quam saepe repudiandae reiciendis illo sunt aliquam distinctio laborum doloremque, modi animi temporibus fugit alias qui obcaecati? Tenetur rem ducimus eveniet amet fugiat, quis rerum impedit. Laboriosam incidunt accusantium nemo provident, eveniet amet numquam quis sequi non, nam harum mollitia enim, adipisci labore? Numquam hic rerum dolores earum expedita error, sint quia pariatur a nisi magni totam, odio quaerat maiores at non et aliquid harum dignissimos neque molestias adipisci nihil! Fugiat quibusdam vel facilis eum saepe quisquam aliquam minima minus unde est repellat iure ducimus consequatur fuga, soluta inventore impedit cumque cupiditate quae animi. Accusantium necessitatibus sed vel saepe quis aperiam corporis, laborum ducimus. Cum porro optio sequi aspernatur velit dolores, magni earum tenetur exercitationem! Provident vel a quos magni, unde ipsam architecto nam id? Autem voluptate asperiores laboriosam porro ratione ipsa reiciendis natus hic, explicabo sunt accusantium quae ex eius mollitia nobis beatae deserunt nisi vitae fugiat magni suscipit? Quibusdam dolorem aperiam recusandae animi quos neque! Laboriosam cumque, quas exercitationem esse sed quos distinctio atque aut vero animi!</p>
+    </div>
+
+    <button class="btn" onclick="toggle()">show/hide</button>
+
+
+    <script>
+        
+        // event listener
+        let para=document.getElementById('para');
+
+        para.addEventListener('mouseover',function func1(){
+            alert('on text');
+        })
+
+        para.addEventListener('mouseout',function func1(){
+            alert('off text');
+        })
+
+
+        // an event of clicking
+        function toggle()
+        {
+            // let btn=document.getElementById('btn');
+            let a=document.getElementById('para');
+            if(a.style.display == 'none')
+            {
+                a.style.display='block';
+            }
+            else
+            {
+                a.style.display='none';
+            }
+        }
+    </script>
+    
+</body>
+</html>
